@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+.main {
+	border: 1px solid black;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.mem-section {
+	cursor: pointer;
+	background-color: rgb(228, 227, 227);
+}
+
+.mem-input {
+	display: none;
+}
+
+.mem-text {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(252, 236, 221);
+}
+
+.mem-head {
+	transition: all 0.4s;
+	
+}
+
+.mem-btn {
+	background: url(/assets/svg/xmark-solid.svg);
+	background-repeat: no-repeat;
+	height: 1.2vw;
+	width: 1.2vw;
+
+}
+
+.mem-img {
+	display: flex;
+	justify-content: center;
+}
