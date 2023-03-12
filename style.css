@@ -2,42 +2,53 @@
 	box-sizing: border-box;
 }
 
-.main {
-	border: 1px solid black;
-	max-width: 50%;
-	margin: 0 auto;
+.container {
+	max-width: 1400px;
+	margin: 20px auto;
+	text-align: center;
 }
 
-.mem-section {
+
+.accordion_input {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.accordion_input:checked ~ .accordion_content {
+	display: block;
+}
+
+.accordion_title {
+	display: block;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
 	cursor: pointer;
-	background-color: rgb(228, 227, 227);
+	background: #eee;
+	color: #333;
+	position: relative;
 }
 
-.mem-input {
+.accordion_content {
+	cursor: pointer;
 	display: none;
 }
 
-.mem-text {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: rgb(252, 236, 221);
+
+
+.accordion_content:target {
+	display: block;
 }
 
-.mem-head {
-	transition: all 0.4s;
-	
+.image {
+	width: 30%;
+	height: 30%;
 }
 
-.mem-btn {
-	background: url(/assets/svg/xmark-solid.svg);
-	background-repeat: no-repeat;
-	height: 1.2vw;
-	width: 1.2vw;
-
-}
-
-.mem-img {
-	display: flex;
-	justify-content: center;
+h1 {
+	margin: 0;
+	padding: 60px 20px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-align: center;
 }
