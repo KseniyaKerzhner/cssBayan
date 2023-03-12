@@ -29,6 +29,16 @@
 	position: relative;
 }
 
+.button {
+	background: url(/assets/svg/plus-solid.svg) center no-repeat;
+	transition: 0.7s;
+	border: 0;
+}
+
+.accordion_input:checked~label .button {
+    transform: rotate(-45deg);
+}
+
 .accordion_content {
 	cursor: pointer;
 	display: none;
