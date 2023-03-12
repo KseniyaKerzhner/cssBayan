@@ -24,14 +24,15 @@
 	justify-content: space-between;
 	padding: 20px;
 	cursor: pointer;
+	transition: 0.6s;
 	background: #eee;
 	color: #333;
 	position: relative;
 }
 
 .button {
-	background: url(/assets/svg/plus-solid.svg) center no-repeat;
-	transition: 0.7s;
+	background: url(assets/svg/plus-solid.svg) center no-repeat;
+	transition: 0.6s;
 	border: 0;
 }
 
@@ -42,9 +43,8 @@
 .accordion_content {
 	cursor: pointer;
 	display: none;
+	
 }
-
-
 
 .accordion_content:target {
 	display: block;
@@ -53,6 +53,7 @@
 .image {
 	width: 30%;
 	height: 30%;
+	transition: all 0.9s;
 }
 
 h1 {
